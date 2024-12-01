@@ -16,7 +16,7 @@ fun EmptyNameListContent()
     Box(modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center)
     {
-        Text(text = stringResource(R.string.empty_name_list_text),fontSize = 18.sp)
+        Text(text = stringResource(R.string.empty_name_list_text),fontSize = 16.sp)
 
     }
 }

@@ -28,29 +28,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             RoomMVVMJetpackComposeTheme {
-                Scaffold(
-                    topBar = {
-
-                    },
-                    floatingActionButton = {
-                        FloatingActionButton(onClick = { },containerColor = colorResource(R.color.float_green)) {
-                            Icon(Icons.Default.Add, contentDescription = "+")
-                        }
-                    }
-                ) { paddingValues ->
-                    if (todoList.isEmpty()) {
-                        Box(modifier = Modifier.fillMaxSize().padding(paddingValues)) {
-                            Text(
-                                "Press the + button to add a TODO item",
-                                Modifier.align(Alignment.Center)
-                            )
-                        }
-                    } else {
-                        LazyColumn {
-
-                        }
-                    }
-                }
+                NameListScreen()
             }
         }
     }
